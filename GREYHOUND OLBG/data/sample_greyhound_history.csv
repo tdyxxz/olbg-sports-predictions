@@ -1,0 +1,13 @@
+race_id,race_date,dog_name,track,distance_m,grade,trap,sp_decimal,finish_pos,split_time,run_time
+MON_2025-01-01_R1,2025-01-01,Swift Aces,Monmore,480,A3,2,3.20,1,4.35,28.61
+MON_2025-01-01_R1,2025-01-01,Rapid Kestrel,Monmore,480,A3,5,4.10,2,4.44,28.79
+MON_2025-01-01_R1,2025-01-01,Blue Cedar,Monmore,480,A3,1,5.80,3,4.52,28.98
+MON_2025-01-05_R2,2025-01-05,Swift Aces,Monmore,480,A2,3,3.60,2,4.41,28.72
+MON_2025-01-05_R2,2025-01-05,Rapid Kestrel,Monmore,480,A2,5,3.90,1,4.33,28.60
+MON_2025-01-05_R2,2025-01-05,Blue Cedar,Monmore,480,A2,1,6.50,3,4.56,29.04
+MON_2025-01-12_R3,2025-01-12,Swift Aces,Monmore,480,A3,2,3.10,1,4.31,28.54
+MON_2025-01-12_R3,2025-01-12,Rapid Kestrel,Monmore,480,A3,5,4.40,2,4.42,28.77
+MON_2025-01-12_R3,2025-01-12,Blue Cedar,Monmore,480,A3,1,5.90,3,4.58,29.09
+MON_2025-01-19_R4,2025-01-19,Swift Aces,Monmore,480,A2,2,3.50,1,4.34,28.58
+MON_2025-01-19_R4,2025-01-19,Rapid Kestrel,Monmore,480,A2,5,4.00,2,4.39,28.69
+MON_2025-01-19_R4,2025-01-19,Blue Cedar,Monmore,480,A2,1,6.20,3,4.60,29.13

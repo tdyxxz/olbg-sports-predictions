@@ -1,0 +1,65 @@
+System Principles:
+
+1. Selectivity First
+- The system should favor skipping bets over forcing predictions.
+- A high percentage of NO BET outputs is expected and desired.
+
+2. Independence of Subagents
+- Each subagent should only perform its assigned role.
+- No subagent should attempt to complete the entire pipeline.
+
+3. Structured Outputs Only
+- All intermediate outputs must be structured (JSON-like).
+- Avoid free-form reasoning in outputs passed between agents.
+
+4. Consensus-Based Modeling
+- Use multiple signals/models.
+- Prefer agreement between models.
+- Penalize high variance between predictions.
+
+5. Risk Control
+- Avoid low edge trades (< ~3-5% estimated edge).
+- Avoid high-variance or unstable games.
+- Reject unclear or contradictory signals.
+
+6. Market Awareness
+- Compare model probability vs implied probability from odds.
+- Favor positive expected value (EV) opportunities.
+
+7. No-Bet Rule
+- If no strong edge exists, the system must output NO BET.
+
+8. Consistency Over Complexity
+- Simple, repeatable logic is preferred over overly complex modeling.
+- Stability > sophistication.
+
+9. No Fabrication
+- If required data is missing, the system must not guess.
+- It should explicitly state missing inputs.
+
+10. Output Discipline
+- Final output must be clean and minimal.
+- Only include actionable bets or NO BET.
+
+11. Public Prediction Writing
+- Public-facing prediction text must not reveal the model, workflow, edge, EV, thresholds, or any other internal logic.
+- The predicted winner or outcome must be obvious early in the sentence or paragraph.
+- Each prediction should be at least 30 words unless the sport-specific prompt sets a higher floor.
+- Use only real, verified, current stats. If they cannot be verified for the current card, write the prediction without fabricated numbers.
+- Vary phrasing and sentence rhythm so each prediction feels individually written.
+12. OLBG Board Priority
+- For every sport, first attempt to source the available event board from OLBG if a public sport page exists.
+- Treat the OLBG board as the priority list for which fixtures should be considered for written predictions.
+- Use external data sources for pricing, team stats, injuries, form, and modeling inputs, but use OLBG to define the candidate board whenever practical.
+- Cache OLBG board pulls locally and keep the parser lightweight so same-day refreshes are fast.
+- If OLBG does not expose a usable board for a sport or date, fall back to the sport-specific schedule source and note that fallback internally.
+
+RUNTIME AND EXECUTION STANDARDS
+
+- Every sport workflow must be built runtime-first. Slow but clever is not acceptable if it risks timeouts or unstable execution.
+- Default to cache-first architecture for live data, schedule data, standings, team form, and any repeated stat lookups.
+- Reuse sessions, avoid repeated imports on hot paths, and keep cold-start dependencies minimal.
+- Prefer short-lived local cache files with clear freshness windows so repeated same-day runs are fast.
+- Add explicit fast/internal modes when public markdown or secondary artifacts are not needed.
+- Parallelize only where the speed gain is real and the data dependencies stay clear.
+- Build one-command daily runners for each sport so prediction generation and settlement tracking remain operationally simple.

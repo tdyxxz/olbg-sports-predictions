@@ -1,0 +1,12 @@
+{
+  "name": "shadow_favorites_v1",
+  "band": "favorites",
+  "min_edge": 0.04,
+  "weights": {
+    "overall_win_pct_edge": 0.45,
+    "venue_win_pct_edge": 0.3,
+    "recent_win_pct_edge": 0.35,
+    "recent_point_diff_edge": 0.018,
+    "top_scorer_ppg_edge": 0.012
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "shadow_heavy_favorites_v1",
+  "description": "Shadow-only baseball candidate focused on favorites -200 or shorter from the robust yearly holdout shortlist.",
+  "band": "favorites_200_plus",
+  "min_edge": 0.06,
+  "weights": {
+    "recent_win_edge": 0.5664441846420605,
+    "recent_rd_edge": -0.3022528929038586,
+    "season_win_edge": 1.3751106832316409,
+    "season_rd_edge": -0.96785813512535,
+    "venue_win_edge": -1.057868357171867,
+    "venue_rd_edge": 0.7229839488899024,
+    "starter_edge": -0.3573594202753472,
+    "prev_ops_hand_edge": 0.7026278433512037,
+    "prev_avg_hand_edge": -0.20705084832185472,
+    "prev_bullpen_edge": 1.0682765978806525
+  }
+}

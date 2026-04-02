@@ -1,0 +1,66 @@
+{
+  "markets": {
+    "podium_finish": {
+      "label_column": "actual_podium_finish",
+      "odds_column": "odds_podium_finish",
+      "min_edge": 0.045,
+      "min_odds": 1.8,
+      "max_bets_per_race": 2,
+      "features": [
+        "grid_position",
+        "recent_avg_finish",
+        "recent_avg_grid",
+        "recent_podium_rate",
+        "recent_points_rate",
+        "team_recent_points_avg",
+        "team_reliability_rate",
+        "driver_track_podium_rate",
+        "teammate_grid_delta",
+        "constructor_rank",
+        "track_overtake_difficulty",
+        "weather_wet_flag"
+      ]
+    },
+    "fastest_lap": {
+      "label_column": "actual_fastest_lap",
+      "odds_column": "odds_fastest_lap",
+      "min_edge": 0.06,
+      "min_odds": 3.0,
+      "max_bets_per_race": 1,
+      "features": [
+        "grid_position",
+        "recent_fastest_lap_rate",
+        "recent_avg_grid",
+        "team_recent_points_avg",
+        "team_reliability_rate",
+        "driver_track_fastest_lap_rate",
+        "expected_clean_air_score",
+        "expected_free_stop_score",
+        "track_deg_index",
+        "track_safety_car_index",
+        "weather_wet_flag"
+      ]
+    },
+    "points_finish": {
+      "label_column": "actual_points_finish",
+      "odds_column": "odds_points_finish",
+      "min_edge": 0.04,
+      "min_odds": 1.55,
+      "max_bets_per_race": 3,
+      "features": [
+        "grid_position",
+        "recent_avg_finish",
+        "recent_avg_grid",
+        "recent_points_rate",
+        "recent_dnf_rate",
+        "team_recent_points_avg",
+        "team_reliability_rate",
+        "driver_track_points_rate",
+        "teammate_grid_delta",
+        "constructor_rank",
+        "track_overtake_difficulty",
+        "weather_wet_flag"
+      ]
+    }
+  }
+}

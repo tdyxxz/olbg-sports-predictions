@@ -1,0 +1,6 @@
+pick_id,strategy_name,sport,event_id,event_date,market,selection,confidence,stake_units,notes
+1,olbg_optimized_v1.1,Motor Racing,f1_2025_australia_winner,2025-03-16,Race Winner,Lando Norris,HIGH,1.0,
+2,olbg_optimized_v3.1,Snooker,snooker_2025_world_open_final,2025-03-24,Match Winner,Player A,MEDIUM,1.0,
+3,olbg_optimized_v1.1,Golf,golf_2025_masters_outright,2025-04-13,Outright Winner,Scottie Scheffler,MEDIUM,1.0,
+4,olbg_optimized_v1.1,Rugby Union,rugby_2025_6n_eng_ire,2025-02-01,Match Winner,Ireland,HIGH,1.0,
+5,olbg_optimized_v1.1,Greyhounds,grey_2025_demo_r1,2025-02-01,Win Race,Dog A,LOW,1.0,

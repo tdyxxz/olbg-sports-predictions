@@ -1,0 +1,56 @@
+Position,Name + ID,Name,ID,Roster Position,Salary,Game Info,TeamAbbrev,AvgPointsPerGame
+D,George Russell (42399656),George Russell,42399656,CPT,21000,Japanese Grand Prix 2026,MERC,46
+D,Andrea Kimi Antonelli (42399657),Andrea Kimi Antonelli,42399657,CPT,18000,Japanese Grand Prix 2026,MERC,50.38
+D,Lewis Hamilton (42399658),Lewis Hamilton,42399658,CPT,17100,Japanese Grand Prix 2026,FERR,39
+D,Charles Leclerc (42399659),Charles Leclerc,42399659,CPT,16500,Japanese Grand Prix 2026,FERR,40.38
+D,Max Verstappen (42399660),Max Verstappen,42399660,CPT,15600,Japanese Grand Prix 2026,RB,24.5
+CNSTR,Mercedes  (42399645),Mercedes ,42399645,CNSTR,15000,Japanese Grand Prix 2026,MERC,99.38
+D,George Russell (42399623),George Russell,42399623,D,14000,Japanese Grand Prix 2026,MERC,46
+D,Lando Norris (42399661),Lando Norris,42399661,CPT,13500,Japanese Grand Prix 2026,MCL,37
+D,Andrea Kimi Antonelli (42399624),Andrea Kimi Antonelli,42399624,D,12000,Japanese Grand Prix 2026,MERC,50.38
+CNSTR,Ferrari  (42399646),Ferrari ,42399646,CNSTR,12000,Japanese Grand Prix 2026,FERR,77.38
+D,Oscar Piastri (42399662),Oscar Piastri,42399662,CPT,12000,Japanese Grand Prix 2026,MCL,0
+D,Lewis Hamilton (42399625),Lewis Hamilton,42399625,D,11400,Japanese Grand Prix 2026,FERR,39
+D,Charles Leclerc (42399626),Charles Leclerc,42399626,D,11000,Japanese Grand Prix 2026,FERR,40.38
+D,Isack Hadjar (42399663),Isack Hadjar,42399663,CPT,10500,Japanese Grand Prix 2026,RB,7.5
+D,Max Verstappen (42399627),Max Verstappen,42399627,D,10400,Japanese Grand Prix 2026,RB,24.5
+CNSTR,McLaren  (42399647),McLaren ,42399647,CNSTR,10000,Japanese Grand Prix 2026,MCL,30
+D,Oliver Bearman (42399664),Oliver Bearman,42399664,CPT,9600,Japanese Grand Prix 2026,HAAS,38.5
+D,Lando Norris (42399628),Lando Norris,42399628,D,9000,Japanese Grand Prix 2026,MCL,37
+D,Pierre Gasly (42399665),Pierre Gasly,42399665,CPT,9000,Japanese Grand Prix 2026,ALPN,32
+D,Liam Lawson (42399666),Liam Lawson,42399666,CPT,8100,Japanese Grand Prix 2026,VCARB,23.5
+D,Oscar Piastri (42399629),Oscar Piastri,42399629,D,8000,Japanese Grand Prix 2026,MCL,0
+CNSTR,Red Bull Racing  (42399648),Red Bull Racing ,42399648,CNSTR,8000,Japanese Grand Prix 2026,RB,31
+D,Arvid Lindblad (42399667),Arvid Lindblad,42399667,CPT,7800,Japanese Grand Prix 2026,VCARB,24.5
+D,Nico Hulkenberg (42399668),Nico Hulkenberg,42399668,CPT,7500,Japanese Grand Prix 2026,AUD,23
+D,Esteban Ocon (42399669),Esteban Ocon,42399669,CPT,7200,Japanese Grand Prix 2026,HAAS,16
+D,Isack Hadjar (42399630),Isack Hadjar,42399630,D,7000,Japanese Grand Prix 2026,RB,7.5
+D,Carlos Sainz Jr. (42399670),Carlos Sainz Jr.,42399670,CPT,6600,Japanese Grand Prix 2026,WILL,26.5
+D,Oliver Bearman (42399631),Oliver Bearman,42399631,D,6400,Japanese Grand Prix 2026,HAAS,38.5
+D,Franco Colapinto (42399671),Franco Colapinto,42399671,CPT,6300,Japanese Grand Prix 2026,ALPN,19
+D,Pierre Gasly (42399632),Pierre Gasly,42399632,D,6000,Japanese Grand Prix 2026,ALPN,32
+D,Gabriel Bortoleto (42399672),Gabriel Bortoleto,42399672,CPT,6000,Japanese Grand Prix 2026,AUD,29
+D,Alexander Albon (42399673),Alexander Albon,42399673,CPT,5700,Japanese Grand Prix 2026,WILL,24
+D,Liam Lawson (42399633),Liam Lawson,42399633,D,5400,Japanese Grand Prix 2026,VCARB,23.5
+D,Valtteri Bottas (42399674),Valtteri Bottas,42399674,CPT,5400,Japanese Grand Prix 2026,CAD,14
+D,Arvid Lindblad (42399634),Arvid Lindblad,42399634,D,5200,Japanese Grand Prix 2026,VCARB,24.5
+D,Sergio Perez (42399675),Sergio Perez,42399675,CPT,5100,Japanese Grand Prix 2026,CAD,16
+D,Nico Hulkenberg (42399635),Nico Hulkenberg,42399635,D,5000,Japanese Grand Prix 2026,AUD,23
+D,Esteban Ocon (42399636),Esteban Ocon,42399636,D,4800,Japanese Grand Prix 2026,HAAS,16
+D,Fernando Alonso (42399676),Fernando Alonso,42399676,CPT,4800,Japanese Grand Prix 2026,AM,7
+D,Lance Stroll (42399677),Lance Stroll,42399677,CPT,4500,Japanese Grand Prix 2026,AM,10.5
+D,Carlos Sainz Jr. (42399637),Carlos Sainz Jr.,42399637,D,4400,Japanese Grand Prix 2026,WILL,26.5
+D,Franco Colapinto (42399638),Franco Colapinto,42399638,D,4200,Japanese Grand Prix 2026,ALPN,19
+D,Gabriel Bortoleto (42399639),Gabriel Bortoleto,42399639,D,4000,Japanese Grand Prix 2026,AUD,29
+CNSTR,Haas F1 Team  (42399649),Haas F1 Team ,42399649,CNSTR,4000,Japanese Grand Prix 2026,HAAS,44
+D,Alexander Albon (42399640),Alexander Albon,42399640,D,3800,Japanese Grand Prix 2026,WILL,24
+CNSTR,Racing Bulls F1 Team  (42399650),Racing Bulls F1 Team ,42399650,CNSTR,3800,Japanese Grand Prix 2026,VCARB,40
+D,Valtteri Bottas (42399641),Valtteri Bottas,42399641,D,3600,Japanese Grand Prix 2026,CAD,14
+CNSTR,Alpine F1 Team  (42399651),Alpine F1 Team ,42399651,CNSTR,3600,Japanese Grand Prix 2026,ALPN,44
+D,Sergio Perez (42399642),Sergio Perez,42399642,D,3400,Japanese Grand Prix 2026,CAD,16
+CNSTR,Audi F1 Team  (42399652),Audi F1 Team ,42399652,CNSTR,3300,Japanese Grand Prix 2026,AUD,19.5
+D,Fernando Alonso (42399643),Fernando Alonso,42399643,D,3200,Japanese Grand Prix 2026,AM,7
+CNSTR,Williams  (42399653),Williams ,42399653,CNSTR,3100,Japanese Grand Prix 2026,WILL,24.5
+D,Lance Stroll (42399644),Lance Stroll,42399644,D,3000,Japanese Grand Prix 2026,AM,10.5
+CNSTR,Aston Martin F1 Team  (42399654),Aston Martin F1 Team ,42399654,CNSTR,3000,Japanese Grand Prix 2026,AM,9
+CNSTR,Cadillac  (42399655),Cadillac ,42399655,CNSTR,3000,Japanese Grand Prix 2026,CAD,17.5

@@ -1,0 +1,5 @@
+event_date,race_name,bookmaker,driver,market,outcome,decimal_odds
+2025-03-16,Australian Grand Prix,ExampleBook,Max Verstappen,podium_finish,yes,1.72
+2025-03-16,Australian Grand Prix,ExampleBook,Lando Norris,podium_finish,yes,1.95
+2025-03-16,Australian Grand Prix,ExampleBook,Max Verstappen,fastest_lap,yes,5.50
+2025-03-16,Australian Grand Prix,ExampleBook,Lewis Hamilton,points_finish,yes,1.72

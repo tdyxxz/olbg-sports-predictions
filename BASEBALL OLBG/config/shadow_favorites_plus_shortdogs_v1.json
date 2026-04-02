@@ -1,0 +1,18 @@
+{
+  "name": "shadow_favorites_plus_shortdogs_v1",
+  "description": "Shadow-only baseball candidate from robust yearly holdout search. Simpler profile than the unstable medium-underdog monthly search.",
+  "band": "favorites_200_plus_or_short_dog",
+  "min_edge": 0.18,
+  "weights": {
+    "recent_win_edge": -1.2566999254218647,
+    "recent_rd_edge": 0.18597941941641505,
+    "season_win_edge": -0.7552497567883556,
+    "season_rd_edge": -1.1059629829845954,
+    "venue_win_edge": 0.9335882611954078,
+    "venue_rd_edge": 0.7440791579582711,
+    "starter_edge": -0.2219106180777617,
+    "prev_ops_hand_edge": -1.2965893418552497,
+    "prev_avg_hand_edge": 0.14381558042158593,
+    "prev_bullpen_edge": 1.458371110299542
+  }
+}

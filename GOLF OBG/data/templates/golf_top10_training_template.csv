@@ -1,0 +1,4 @@
+event_id,event_name,tour,event_date,player_name,book,top10_odds_open,top10_odds_close,finish_position,top10_result,field_size,recent_top10_rate_12m,recent_made_cut_rate_12m,last5_top10_count,last5_made_cuts,recent_sg_approach,recent_sg_t2g,recent_sg_total,recent_sg_putting,course_history_top10_rate,course_history_avg_finish,course_fit_score,weather_fit_score,world_rank
+sample001,Sample Championship,pga,2025-01-15,Player A,draftkings,7.80,7.00,8,1,132,0.58,0.92,3,5,1.05,1.45,1.60,0.18,0.67,9,0.90,0.62,8
+sample001,Sample Championship,pga,2025-01-15,Player B,draftkings,5.80,6.10,24,0,132,0.21,0.76,1,4,0.22,0.35,0.28,-0.05,0.00,41,0.48,0.50,39
+sample001,Sample Championship,pga,2025-01-15,Player C,draftkings,9.00,8.40,5,1,132,0.29,0.84,2,5,0.72,0.92,0.96,0.08,0.25,22,0.76,0.61,28

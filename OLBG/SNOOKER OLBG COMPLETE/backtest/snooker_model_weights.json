@@ -1,0 +1,47 @@
+{
+  "epochs": 800,
+  "feature_columns": [
+    "rank_gap",
+    "last5_wins_diff",
+    "last5_frame_diff_gap",
+    "in_tournament_wins_diff",
+    "in_tournament_frame_diff_gap",
+    "rest_days_diff",
+    "prev_decider_diff",
+    "h2h_3y_wins_diff"
+  ],
+  "l2": 0.001,
+  "learning_rate": 0.15,
+  "means": {
+    "h2h_3y_wins_diff": 0.0,
+    "in_tournament_frame_diff_gap": 0.0,
+    "in_tournament_wins_diff": 0.0,
+    "last5_frame_diff_gap": 0.0,
+    "last5_wins_diff": 0.03529411764705883,
+    "prev_decider_diff": -0.29411764705882354,
+    "rank_gap": 0.7941176470588235,
+    "rest_days_diff": 0.196078431372549
+  },
+  "scales": {
+    "h2h_3y_wins_diff": 1.0,
+    "in_tournament_frame_diff_gap": 1.0,
+    "in_tournament_wins_diff": 1.0,
+    "last5_frame_diff_gap": 0.06859943405700354,
+    "last5_wins_diff": 0.07624400821656306,
+    "prev_decider_diff": 0.4556450995538137,
+    "rank_gap": 0.835165949156069,
+    "rest_days_diff": 0.4286904139034401
+  },
+  "train_ratio": 0.8,
+  "weights": {
+    "bias": 1.538172208497872,
+    "h2h_3y_wins_diff": 0.0,
+    "in_tournament_frame_diff_gap": 0.0,
+    "in_tournament_wins_diff": 0.0,
+    "last5_frame_diff_gap": 0.2001963025628721,
+    "last5_wins_diff": -0.9753583536863066,
+    "prev_decider_diff": 1.6128701120227273,
+    "rank_gap": 4.033007624681761,
+    "rest_days_diff": 1.666508093373319
+  }
+}

@@ -1,0 +1,8 @@
+event_id,sport,event_date,competition,event_name,market,selection,odds_decimal,bookmaker,source_url,result,notes
+f1_2025_australia_winner,Motor Racing,2025-03-16,Formula 1,Australian Grand Prix,Race Winner,Lando Norris,2.80,ExampleBook,https://example.com,win,
+f1_2025_australia_winner,Motor Racing,2025-03-16,Formula 1,Australian Grand Prix,Race Winner,Max Verstappen,3.10,ExampleBook,https://example.com,loss,
+snooker_2025_world_open_final,Snooker,2025-03-24,World Open,World Open Final,Match Winner,Player A,1.72,ExampleBook,https://example.com,win,
+snooker_2025_world_open_final,Snooker,2025-03-24,World Open,World Open Final,Match Winner,Player B,2.15,ExampleBook,https://example.com,loss,
+golf_2025_masters_outright,Golf,2025-04-13,Masters Tournament,Masters,Outright Winner,Scottie Scheffler,5.50,ExampleBook,https://example.com,win,
+rugby_2025_6n_eng_ire,Rugby Union,2025-02-01,Six Nations,England vs Ireland,Match Winner,Ireland,1.55,ExampleBook,https://example.com,win,
+grey_2025_demo_r1,Greyhounds,2025-02-01,Demo Track,Demo Track R1,Win Race,Dog A,3.40,ExampleBook,https://example.com,loss,

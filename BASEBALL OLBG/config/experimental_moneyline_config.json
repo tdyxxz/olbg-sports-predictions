@@ -1,0 +1,13 @@
+{
+  "name": "experimental_short_dogs_v1",
+  "description": "In-sample 2023-2025 weighted regime search candidate. Positive across all three seasons but not yet accepted as production-safe.",
+  "band": "short_underdogs",
+  "min_edge": 0.25,
+  "weights": {
+    "recent_win_edge": -0.9113167054953023,
+    "recent_rd_edge": 0.3622766214215454,
+    "season_win_edge": -0.6150212879417313,
+    "season_rd_edge": -0.30068622998096073,
+    "starter_edge": -0.6990687426335824
+  }
+}
