@@ -1,0 +1,254 @@
+/* Custom styles for OLBG Sports Predictions Website */
+
+/* Sport-specific color themes */
+.sport-baseball { border-left-color: #dc2626; background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%); }
+.sport-basketball { border-left-color: #ea580c; background: linear-gradient(135deg, #fff7ed 0%, #ffffff 100%); }
+.sport-cricket { border-left-color: #ca8a04; background: linear-gradient(135deg, #fefce8 0%, #ffffff 100%); }
+.sport-darts { border-left-color: #65a30d; background: linear-gradient(135deg, #f7fee7 0%, #ffffff 100%); }
+.sport-gaa { border-left-color: #16a34a; background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%); }
+.sport-golf { border-left-color: #059669; background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 100%); }
+.sport-greyhound { border-left-color: #0891b2; background: linear-gradient(135deg, #ecfeff 0%, #ffffff 100%); }
+.sport-handball { border-left-color: #0284c7; background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%); }
+.sport-icehockey { border-left-color: #2563eb; background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%); }
+.sport-motorracing { border-left-color: #4f46e5; background: linear-gradient(135deg, #eef2ff 0%, #ffffff 100%); }
+.sport-rugbyleague { border-left-color: #7c3aed; background: linear-gradient(135deg, #f3e8ff 0%, #ffffff 100%); }
+.sport-rugbyunion { border-left-color: #9333ea; background: linear-gradient(135deg, #faf5ff 0%, #ffffff 100%); }
+.sport-snooker { border-left-color: #c026d3; background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%); }
+.sport-tennis { border-left-color: #e11d48; background: linear-gradient(135deg, #fff1f2 0%, #ffffff 100%); }
+.sport-volleyball { border-left-color: #be123c; background: linear-gradient(135deg, #fff1f2 0%, #ffffff 100%); }
+.sport-americanfootball { border-left-color: #991b1b; background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%); }
+
+/* Enhanced card styles */
+.sport-card {
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.sport-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.5), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.sport-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Prediction item styles */
+.prediction-item {
+    transition: all 0.2s ease;
+    border: 1px solid #e5e7eb;
+    position: relative;
+}
+
+.prediction-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent, rgba(59, 130, 246, 0.05));
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.prediction-item:hover::after {
+    opacity: 1;
+}
+
+.prediction-item:hover {
+    background-color: #f8fafc;
+    border-color: #3b82f6;
+    transform: translateX(2px);
+}
+
+/* Loading animations */
+.loading-skeleton {
+    animation: pulse 2s infinite;
+    background: linear-gradient(90deg, #f3f4f6 25%, #e5e7eb 50%, #f3f4f6 75%);
+    background-size: 200% 100%;
+    animation: shimmer-loading 1.5s infinite;
+}
+
+@keyframes shimmer-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Header gradient animation */
+header {
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Modal styles */
+.modal-backdrop {
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    animation: modal-slide-in 0.3s ease-out;
+}
+
+@keyframes modal-slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Button animations */
+.btn-primary {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn-primary:hover::before {
+    left: 100%;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* Statistics cards */
+.stat-card {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.stat-icon {
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover .stat-icon {
+    transform: scale(1.1);
+}
+
+/* Filter section */
+.filter-section {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .sport-card {
+        margin-bottom: 1rem;
+    }
+    
+    .prediction-item {
+        padding: 0.75rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Success/Error states */
+.success-glow {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+}
+
+.error-glow {
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+}
+
+/* Confidence indicators */
+.confidence-high { color: #059669; }
+.confidence-medium { color: #d97706; }
+.confidence-low { color: #dc2626; }
+
+/* Odds styling */
+.odds-value {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Sport icon backgrounds */
+.icon-baseball { background: rgba(220, 38, 38, 0.1); color: #dc2626; }
+.icon-basketball { background: rgba(234, 88, 12, 0.1); color: #ea580c; }
+.icon-cricket { background: rgba(202, 138, 4, 0.1); color: #ca8a04; }
+.icon-darts { background: rgba(101, 163, 13, 0.1); color: #65a30d; }
+.icon-gaa { background: rgba(22, 163, 74, 0.1); color: #16a34a; }
+.icon-golf { background: rgba(5, 150, 105, 0.1); color: #059669; }
+.icon-greyhound { background: rgba(8, 145, 178, 0.1); color: #0891b2; }
+.icon-handball { background: rgba(2, 132, 199, 0.1); color: #0284c7; }
+.icon-icehockey { background: rgba(37, 99, 235, 0.1); color: #2563eb; }
+.icon-motorracing { background: rgba(79, 70, 229, 0.1); color: #4f46e5; }
+.icon-rugbyleague { background: rgba(124, 58, 237, 0.1); color: #7c3aed; }
+.icon-rugbyunion { background: rgba(147, 51, 234, 0.1); color: #9333ea; }
+.icon-snooker { background: rgba(192, 38, 211, 0.1); color: #c026d3; }
+.icon-tennis { background: rgba(225, 29, 72, 0.1); color: #e11d48; }
+.icon-volleyball { background: rgba(190, 18, 60, 0.1); color: #be123c; }
+.icon-americanfootball { background: rgba(153, 27, 27, 0.1); color: #991b1b; }
