@@ -6,16 +6,19 @@ on:
     - cron: '0 17 * * *'
   workflow_dispatch: # Allow manual triggering
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   run-predictions:
-    runs-on: windows-latest
+    runs-on: windows-2025
     
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.10'
         
@@ -25,13 +28,33 @@ jobs:
         pip install -r requirements.txt
         
     - name: Set up PowerShell execution policy
-      run: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+      run: |
+        Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+        Get-ExecutionPolicy
+      shell: pwsh
+      
+    - name: Check repository structure
+      run: |
+        Get-ChildItem -Force
+        if (Test-Path "run_daily_full_cycle.ps1") {
+          Write-Host "PowerShell script found"
+        } else {
+          Write-Host "PowerShell script not found"
+          exit 1
+        }
       shell: pwsh
       
     - name: Run daily predictions cycle
       run: |
         $date = Get-Date -Format 'yyyy-MM-dd'
-        .\run_daily_full_cycle.ps1 -Date $date
+        Write-Host "Running predictions for date: $date"
+        try {
+          & .\run_daily_full_cycle.ps1 -Date $date
+          Write-Host "Predictions completed successfully"
+        } catch {
+          Write-Host "Error running predictions: $_"
+          exit 1
+        }
       shell: pwsh
       
     - name: Upload prediction results
