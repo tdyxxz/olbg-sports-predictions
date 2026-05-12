@@ -161,14 +161,15 @@ class WebPredictionGenerator:
         
         current_prediction = None
         prediction_count = 0
+        in_analysis = False
         
         for i, line in enumerate(lines):
             line = line.strip()
             
             # Detect prediction start (numbered list)
-            if line and line[0].isdigit() and '.' in line:
+            if line and line[0].isdigit() and '.' in line and len(line) < 100:
                 # Save previous prediction if exists
-                if current_prediction:
+                if current_prediction and current_prediction['prediction']:
                     predictions.append(current_prediction)
                     prediction_count += 1
                 
@@ -187,25 +188,34 @@ class WebPredictionGenerator:
                     'venue': 'Stadium',
                     'teams': ['Team A', 'Team B']
                 }
+                in_analysis = False
             
             # Parse prediction details
             elif current_prediction:
                 if line.startswith('Pick:'):
                     current_prediction['title'] = line.split(':', 1)[1].strip()
+                    in_analysis = False
                 elif line.startswith('Event Time:'):
                     time_str = line.split(':', 1)[1].strip()
                     current_prediction['time'] = self._parse_time(time_str)
+                    in_analysis = False
                 elif line.startswith('Competition:'):
-                    pass  # Could store competition if needed
-                elif line and not line.startswith('-') and not line.startswith('FINAL'):
+                    in_analysis = False
+                elif line.startswith('ACTIVE WRITES') or line.startswith('RESEARCH WRITES'):
+                    in_analysis = False
+                elif line.startswith('No active predictions'):
+                    in_analysis = False
+                elif line and not line.startswith('-') and not line.startswith('FINAL') and not line.startswith('VALIDATION'):
                     # This is likely the analysis text
-                    if current_prediction['prediction']:
-                        current_prediction['prediction'] += ' ' + line
-                    else:
-                        current_prediction['prediction'] = line
+                    if len(line) > 20:  # Only substantial text is analysis
+                        if current_prediction['prediction']:
+                            current_prediction['prediction'] += ' ' + line
+                        else:
+                            current_prediction['prediction'] = line
+                            in_analysis = True
         
         # Don't forget the last prediction
-        if current_prediction:
+        if current_prediction and current_prediction['prediction']:
             predictions.append(current_prediction)
         
         return predictions
@@ -433,12 +443,12 @@ class WebPredictionGenerator:
         # Collect predictions
         predictions = self.collect_predictions_from_files()
         
-        # If no real predictions, generate sample data
+        # If no real predictions found, log error but don't generate fake data
         if not predictions:
-            print("No real predictions found, generating sample data...")
-            predictions = self.generate_sample_predictions()
+            print("WARNING: No real predictions found in WRITTEN PREDICTIONS folder")
+            print("Website will show no predictions until predictions are generated")
         
-        # Save to web format
+        # Save to web format (even if empty)
         api_path = self.base_dir / "api" / "predictions.json"
         self.save_predictions_json(predictions, api_path)
         
